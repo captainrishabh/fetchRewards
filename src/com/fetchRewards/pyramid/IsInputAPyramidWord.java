@@ -1,3 +1,5 @@
+package com.fetchRewards.pyramid;
+
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Collections;
