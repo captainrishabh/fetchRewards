@@ -91,14 +91,10 @@ public class IsInputAPyramidWord {
         if(inputStr != null) {
             Map<Character, Integer> charAndCountMap = getCharCountMap(inputStr);
             ArrayList<Map.Entry<Integer, Integer>> entryList = getSortedEntriesList(charAndCountMap);
-            int currentIndex = 0;
             int freqSeriesCurrCount = 1;
             for (Map.Entry<Integer, Integer> entry : entryList)
             {
-                if(currentIndex > 0 && entry.getValue() == freqSeriesCurrCount ){
-                    pyramid = true;
-
-                }else if (currentIndex == 0 && entry.getValue() == freqSeriesCurrCount){
+                if(entry.getValue() == freqSeriesCurrCount ){
                     pyramid = true;
                 }else{
                     pyramid = false;
